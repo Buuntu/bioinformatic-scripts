@@ -8,6 +8,15 @@ input_fasta_file=$1
 output_directory=$2
 lineage=$3 
 
+function display_format {
+    echo "Usage: run_busco.sh [input fasta file] [output directory] [lineage]"
+    exit 1
+}
+
+if [ -z ${input_fasta_file} ] || [ -z ${output_directory} ] || [ -z ${lineage} ]; then
+    display_format
+fi
+
 docker container run -d -v $(pwd):/data --name ${output_directory} vera/busco -i ${input_fasta_file} -o ${output_directory} -l ${lineage} -m genome
 
 
