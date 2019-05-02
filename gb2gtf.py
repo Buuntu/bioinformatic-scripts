@@ -80,7 +80,7 @@ def gb2gtf( source='gb2gtf',allowedTypes=set(['gene','CDS','tRNA','tmRNA','rRNA'
       comments - gene_id "Em:U62317.C22.6.mRNA"; transcript_id "Em:U62317.C22.6.mRNA"; exon_number 1
       """
       gtf = '%s\t%s\t%s\t%s\t%s\t.\t%s\t.\t%s' % ( acc,source,f.type,f.location.start.position+1,f.location.end.position,strand,comments ) #f.frame,
-      print gtf
+      print(gtf)
       
     sys.stderr.write( "%s\tSkipped %s entries having types: %s.\n" % ( gb.id,skipped,', '.join(skippedTypes) ) )
 
