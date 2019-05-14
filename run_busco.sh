@@ -34,6 +34,6 @@ if [ -z ${input_fasta_file} ] || [ -z ${output_directory} ] || [ -z ${lineage} ]
     display_format
 fi
 
-docker container run -d -v $(pwd):/data --name ${output_directory} vera/busco -i ${input_fasta_file} -o ${output_directory} -l ${lineage} -m ${mode} 
+docker container run -d -v $(pwd):/data vera/busco -i ${input_fasta_file} -o ${output_directory} -l ${lineage} -m ${mode} 
 
 
