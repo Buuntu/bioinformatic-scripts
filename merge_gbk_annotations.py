@@ -10,7 +10,7 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-f", description="First genbank file", help="First genbank file")
+parser.add_argument("-f", help="First genbank file")
 parser.add_argument("-F", help="Second genbank file")
 parser.add_argument("-p", help="Qualifier for features in first genbank file")
 parser.add_argument("-P", help="Qualifier for features in second genbank file")
