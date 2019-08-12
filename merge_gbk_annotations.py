@@ -10,11 +10,11 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-f", help="First genbank file")
-parser.add_argument("-F", help="Second genbank file")
-parser.add_argument("-p", help="Qualifier for features in first genbank file")
-parser.add_argument("-P", help="Qualifier for features in second genbank file")
-parser.add_argument("-o", help="Merged genbank file")
+parser.add_argument("-f", help="First genbank file", required=True)
+parser.add_argument("-F", help="Second genbank file", required=True)
+parser.add_argument("-p", help="Qualifier for features in first genbank file", required=True)
+parser.add_argument("-P", help="Qualifier for features in second genbank file", required=True)
+parser.add_argument("-o", help="Merged genbank file", required=True)
 args = parser.parse_args()
 
 file_a = SeqIO.parse(args.f, "genbank")
