@@ -1,2 +1,13 @@
-biopython==1.73
-numpy==1.16.2
+7.4.0
+argcomplete==1.10.0
+argh==0.26.2
+bcbio-gff==0.6.6
+biopython==1.74
+certifi==2019.6.16
+gffutils==0.9
+mkl-fft==1.0.12
+mkl-random==1.0.2
+numpy==1.16.4
+pyfaidx==0.5.5.2
+simplejson==3.16.0
+six==1.12.0
