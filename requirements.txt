@@ -3,7 +3,7 @@ argcomplete==1.10.0
 argh==0.26.2
 bcbio-gff==0.6.6
 biopython==1.74
-certifi==2019.6.16
+certifi==2022.12.7
 gffutils==0.9
 mkl-fft==1.0.12
 mkl-random==1.0.2
